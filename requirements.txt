@@ -1,8 +1,8 @@
-streamlit==1.36.0
-pandas==2.2.2
-numpy==1.26.4
-scikit-learn==1.4.2
-tensorflow==2.17.0
-tf-keras==2.17.0
-transformers==4.42.4
-tokenizers>=0.15.2
+streamlit
+pandas
+numpy
+scikit-learn
+tensorflow
+tf-keras
+transformers
+tokenizers
