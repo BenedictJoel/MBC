@@ -1,8 +1,8 @@
-streamlit
-pandas
-numpy
-scikit-learn
-tensorflow
-tf-keras
-transformers
-tokenizers
+streamlit==
+pandas==
+numpy==
+scikit-learn==
+tensorflow==
+tf-keras==
+transformers==
+tokenizers==
