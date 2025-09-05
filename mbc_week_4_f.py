@@ -10,7 +10,8 @@ Original file is located at
 import pandas as pd
 import numpy as np
 import tensorflow as tf
-from transformers import BertTokenizer, TFBertForSequenceClassification
+from transformers import BertTokenizer, BertForSequenceClassification
+import torch
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
 
