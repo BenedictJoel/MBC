@@ -12,6 +12,7 @@ import numpy as np
 import tensorflow as tf
 from transformers import BertTokenizer, TFBertForSequenceClassification
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import f1_score
 
 # Load data
 train_df = pd.read_csv('train.csv')
@@ -46,7 +47,7 @@ train_df['label_encoded'] = train_df['label'].map(label_map)
 SEQ_LEN = 105 # Based on analysis in Experiment 3
 
 # Initialize tokenizer
-tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True, cache_dir=".cache")
 
 # Encode training data
 train_encoded_inputs = tokenizer(train_df['text'].tolist(),
