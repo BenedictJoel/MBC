@@ -1,6 +1,6 @@
 kagglehub
 streamlit
-tensorflow
+tensorflow==2.9.3
 huggingface-hub
 pillow
 numpy
